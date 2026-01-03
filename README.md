@@ -72,6 +72,22 @@ The GUI version provides a full graphical interface with tabs, buttons, and visu
 
 Note: All network features require an active internet connection. The application will still function offline but network-dependent features will be unavailable.
 
+## **unzipping the archive**
+the GuardME program files comes as a zip archive. You will need to extract and/or unzip the zip archive before installing guardME here’s how to do that:
+
+**macOS**
+1. Open the downloaded folder that contains the Guardme\_cpp.zip archive  
+2. Click the zip to run archive utility (which is a built in macOS application) this will unzip the file into a folder.  
+3. After unzipping the archive, proceed with the setup.
+
+**Linux**
+1. click on the `guardme_cpp-main.zip` archive that you downloaded from this repository
+2. in the menu that pops up click the `extract` option then choose your downloads folder as the destination then confirm.    
+3. Run: cd `~/downloads/guardme_cpp-main/guardme_cpp.zip`  
+4. After you have changed the directory to the zip archive you should see the file’s path in behind your terminal cursor.
+5. Run: `unzip guardme_cpp.zip`  
+6. After unzipping the archive, proceed with the setup.
+
 ### **Automated Setup (Recommended)**
 
 Run the setup script to automatically install dependencies and compile:  
