@@ -1,41 +1,70 @@
-# Prerequisites
-*.d
+# GuardME C++ - Project-specific .gitignore
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# =============================================================================
+# BUILD OUTPUT
+# =============================================================================
+build/
+guardme_console
+GuardME
 
-# Precompiled Headers
-*.gch
-*.pch
+# =============================================================================
+# CMAKE BUILD FILES
+# =============================================================================
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
 
-# Linker files
-*.ilk
+# =============================================================================
+# QT GENERATED FILES
+# =============================================================================
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.pro.user
+*.qmake.stash
 
-# Debugger Files
-*.pdb
+# =============================================================================
+# GUARDME RUNTIME FILES
+# =============================================================================
+# Encrypted credential vault (contains user email credentials)
+~/.guardme/
+credentials.vault
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Quarantine folder for detected malware
+guardme_quarantine/
 
-# Fortran module files
-*.mod
-*.smod
+# ClamAV update tracking
+.clamav_last_update
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# =============================================================================
+# LOGS
+# =============================================================================
+*.log
+guardme.log
 
-# Executables
-*.exe
-*.out
-*.app
+# =============================================================================
+# TEMPORARY/INCOMPLETE DOWNLOADS
+# =============================================================================
+*.tmp
+*.temp
+*.part
+*.crdownload
+*.download
 
-# debug information files
-*.dwo
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# IDE/EDITOR FILES
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.kate-swp
