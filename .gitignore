@@ -1,70 +1,51 @@
-# GuardME C++ - Project-specific .gitignore
-
-# =============================================================================
-# BUILD OUTPUT
-# =============================================================================
-build/
-guardme_console
-GuardME
-
-# =============================================================================
-# CMAKE BUILD FILES
-# =============================================================================
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-compile_commands.json
-
-# =============================================================================
-# QT GENERATED FILES
-# =============================================================================
-moc_*.cpp
-ui_*.h
-qrc_*.cpp
-*.pro.user
-*.qmake.stash
-
-# =============================================================================
-# GUARDME RUNTIME FILES
-# =============================================================================
-# Encrypted credential vault (contains user email credentials)
-~/.guardme/
-credentials.vault
-
-# Quarantine folder for detected malware
-guardme_quarantine/
-
-# ClamAV update tracking
-.clamav_last_update
-
-# =============================================================================
-# LOGS
-# =============================================================================
-*.log
-guardme.log
-
-# =============================================================================
-# TEMPORARY/INCOMPLETE DOWNLOADS
-# =============================================================================
-*.tmp
-*.temp
-*.part
-*.crdownload
-*.download
-
-# =============================================================================
-# OPERATING SYSTEM FILES
-# =============================================================================
+# macOS
 .DS_Store
+._*
+
+# Windows
 Thumbs.db
 desktop.ini
 
-# =============================================================================
-# IDE/EDITOR FILES
-# =============================================================================
+# Linux
+*~
+.directory
+.Trash-*
+
+# iPadOS/iOS
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# IDE/Editor configuration
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
-*.kate-swp
+
+# Build artifacts
+build/
+*.o
+guardme_console
+GuardME
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Qt generated files
+moc_*.cpp
+qrc_*.cpp
+
+# Runtime/sensitive files
+*.vault
+*.log
+
+# Temporary/incomplete downloads
+*.tmp
+*.part
+
+# Documentation
+README.md
